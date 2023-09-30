@@ -1,8 +1,10 @@
-body {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  color: red;
-  background-color: aqua;
+*{
+  margin: 0;
+  padding: 0;
+
 }
 
+body {
+  background-color: red;
+}
 /*# sourceMappingURL=stylish.css.map */
