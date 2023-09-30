@@ -1,6 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+
 body {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  color: red;
-}
+
+  background-color:rgb(221, 220, 220);
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #7e919b;
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(129, 157, 187);
+    text-decoration: underline;
+  }
+
+  li {
+    border-left:  1px solid #170101;
+    border-right: 1px solid #170101;
+    border-top: 1px solid #170101 ;
+    border-right: 1px solid #170101;
+    border-bottom:  1px solid #170101;
+  }
+
+  li:last-child {
+    border-right:  1px solid #170101;
+  }
+
+
 /*# sourceMappingURL=styles.css.map */
