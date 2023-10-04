@@ -7,6 +7,8 @@
 
 body{
   background-color:#FFF8E1; /*krämfärgad som bakgrund */
+  scroll-behavior: smooth;
+
   }
 
   ul {
@@ -58,6 +60,21 @@ body{
     float:right;
   
 }
+
+.bi-telephone:hover, .bi-linkedin:hover, .bi-envelope:hover {
+
+  fill: #007bff; /* färg vid hoover */
+  width: 24px; /* höjd på ikonerna vid hoover */
+  height: 24px; 
+
+}
+
+.bi-linkedin{ 
+
+  fill: black; /* Icon färgen  */
+  margin: left 10px;
+}
+
 
 
 
