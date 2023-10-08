@@ -1,81 +1,126 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family:'poppins', sans-serif;
   box-sizing: border-box;
-  }
-
-body{
-  background-color:#FFF8E1; /*krämfärgad som bakgrund */
-  scroll-behavior: smooth;
-
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    background-color:rgb(148, 147, 147);
-    
-  }
-  
-  li {
-    float:left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: rgb(129, 157, 187);
-    text-decoration: underline;
-  }
-
-  li {
-    border-left:  1px solid #170101;
-    border-right: 1px solid #170101;
-    border-top: 1px solid #170101 ;
-    border-right: 1px solid #170101;
-    border-bottom:  1px solid #170101;
-  }
-
-  li:last-child {
-    border-right:  1px solid #170101;
-  }
-
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: rgb(207, 207, 213);
-    }
-  }
-
-  img {
-    float:right;
-  
+  font-family: "poppins", sans-serif;
 }
 
-.bi-telephone:hover, .bi-linkedin:hover, .bi-envelope:hover {
-
-  fill: #007bff; /* färg vid hoover */
-  width: 24px; /* höjd på ikonerna vid hoover */
-  height: 24px; 
-
+body {
+  background-color: #f0f0f0;
 }
 
-.bi-linkedin{ 
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(BG2.JPB.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-  fill: black; /* Icon färgen  */
-  margin: left 10px;
+nav{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top:45px;
+padding-left: 8%;
+padding-right: 8%;
 }
 
 
+a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: rgb(134, 128, 128);
+}
+
+a {
+  float: left;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: whitesmoke;
+  text-decoration: underline;
+}
+
+a {
+  border-left: 1px solid rgb(142, 135, 135);
+  border-right: 1px solid rgb(142, 135, 135);
+  border-top: 1px solid rgb(142, 135, 135);
+  border-right: 1px solid rgb(142, 135, 135)1;
+  border-bottom: 1px solid rgb(142, 135, 135);
+}
+
+.formulär {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+
+}
+
+.formulär {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: rgb(142, 135, 135);
+
+}
+
+.formulär:hover {
+
+  background-color:rgb(130, 126, 126);
+  text-decoration: underline;
+
+}
+
+.bi-telephone:hover,
+.bi-linkedin:hover,
+.bi-envelope:hover {
+  fill: #0d2641;
+  /* färg vid hoover */
+  width: 15px;
+  /* höjd på ikonerna vid hoover */
+  height: 15px;
+
+}
+
+.bi-linkedin {
+  fill: rgb(168, 185, 237);
+  /* Ikon färgen  */
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  cursor: pointer;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.toggle-checkbox:checked+.toggle-label+.collapsible-content {
+  max-height: 1000px;
+  /* Ett högt värde för att säkerställa att allt innehåll visas */
+}
 
 
 
