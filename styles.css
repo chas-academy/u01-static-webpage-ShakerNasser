@@ -10,19 +10,18 @@ body {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
+
 .logo {
+  display: flex;
+  flex-wrap: wrap;
   color: white;
   font-size: 35px;
   letter-spacing: normal;
   cursor: pointer;
-  transition: color 0.3s; /* Lägger till en övergångseffekt på färgändringen */
-}
 
-.logo:hover {
-  color: red; /* Ändrar textfärgen till röd när musen är över elementet */
 }
 
 
@@ -30,9 +29,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
+  padding-top: 8vh;
   padding-left: 8%;
   padding-right: 8%;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -46,11 +46,6 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   text-transform: capitalize;
-}
-
-nav ul li a:hover {
-  color: #f9004d;
-  transition: 0.4s;
 }
 
 .content {
@@ -94,7 +89,7 @@ h4 {
   display: inline-block;
   width: 100%;
   padding: 14px 130px 14px 15px;
-  border: 2px solid red;
+  border: 3px solid red;
   outline: none;
   border-radius: 30px;
 }
@@ -104,7 +99,8 @@ h4 {
   display: inline-block;
   outline: none;
   border: none;
-  padding: 10px 30px;
+  margin: 10px;
+  padding: 8px 30px;
   border-radius: 30px;
   background-color: red;
   color: whitesmoke;
@@ -114,11 +110,9 @@ h4 {
 .bi-telephone,
 .bi-linkedin,
 .bi-envelope {
-display: flex; 
-bottom: 20px;
-left: 20px;  
+display: flex;
+margin: 10px;
 
-  
 }
 
 
@@ -131,11 +125,54 @@ left: 20px;
 
 }
 
-.bi-telephone:hover,
-.bi-linkedin:hover,
-.bi-envelope:hover {
-  fill: #f9fafa;
-  width: 15px;
-  height: 15px;
+
+/* Lägg till media query för mindre skärmar */
+@media (max-width: 768px) {
+  body {
+    background-size: auto; /* Förhindra att bakgrundsbilden skalar på mindre skärmar */
+  }
+
+  .logo {
+    font-size: 25px; /* Minska textstorleken för logon */
+  }
+
+  nav {
+    padding-top: 4vh; /* Justera padding för navigationsmenyn */
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  nav ul li {
+    padding: 10px 15px; /* Justera padding för länkarna i menyn */
+  }
+
+  h1 {
+    font-size: 50px; /* Minska huvudrubrikens textstorlek */
+  }
+
+  h3 {
+    font-size: 20px; /* Minska underrubrikens textstorlek */
+    margin-bottom: 30px; /* Justera marginalen */
+  }
+
+  .content {
+    left: 4%; /* Justera positionen av innehållet */
+  }
+
+  .newslatter form input:first-child {
+    padding: 10px 80px 10px 10px; /* Justera inputfältets padding */
+  }
+
+  .newslatter form input:last-child {
+    padding: 8px 20px; /* Justera submit-knappens padding */
+  }
 }
+
+
+
+
+
+
+
+
 /*# sourceMappingURL=styles.css.map */
