@@ -6,122 +6,136 @@
 }
 
 body {
-  background-color: #f0f0f0;
-}
-
-body {
-  height: 100vh;
+  background-image: url(Min.port3.PNG.png);
   width: 100%;
-  background-image: url(BG2.JPB.jpg);
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-nav{
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-top:45px;
-padding-left: 8%;
-padding-right: 8%;
-}
-
-
-a {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  background-color: rgb(134, 128, 128);
-}
-
-a {
-  float: left;
-}
-
-a {
-  display: block;
+.logo {
   color: white;
-  text-align: center;
-  padding: 12px 14px;
+  font-size: 35px;
+  letter-spacing: normal;
+  cursor: pointer;
+  transition: color 0.3s; /* Lägger till en övergångseffekt på färgändringen */
+}
+
+.logo:hover {
+  color: red; /* Ändrar textfärgen till röd när musen är över elementet */
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-a:hover {
-  background-color: whitesmoke;
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
 }
 
-a {
-  border-left: 1px solid rgb(142, 135, 135);
-  border-right: 1px solid rgb(142, 135, 135);
-  border-top: 1px solid rgb(142, 135, 135);
-  border-right: 1px solid rgb(142, 135, 135)1;
-  border-bottom: 1px solid rgb(142, 135, 135);
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
 }
 
-.formulär {
-  display: block;
-  color:white;
-  text-align: center;
-  padding: 12px 14px;
-  text-decoration: none;
-
+h1 {
+  color: whitesmoke;
+  margin: 20px 0px 20px;
+  font-size: 75px;
 }
 
-.formulär {
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  background-color: rgb(142, 135, 135);
-
+h3 {
+  color: whitesmoke;
+  margin-bottom: 50px;
+  font-size: 25px;
 }
 
-.formulär:hover {
+h3 {
+  color: whitesmoke;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
 
-  background-color:rgb(130, 126, 126);
-  text-decoration: underline;
+h4 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.newslatter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid red;
+  outline: none;
+  border-radius: 30px;
+}
+
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: red;
+  color: whitesmoke;
+}
+
+
+.bi-telephone,
+.bi-linkedin,
+.bi-envelope {
+display: flex; 
+bottom: 20px;
+left: 20px;  
+
+  
+}
+
+
+.bi-telephone,
+.bi-linkedin,
+.bi-envelope{
+  fill: rgb(240, 240, 245);
+  width: 15px;
+  height: 15px;
 
 }
 
 .bi-telephone:hover,
 .bi-linkedin:hover,
 .bi-envelope:hover {
-  fill: #0d2641;
-  /* färg vid hoover */
+  fill: #f9fafa;
   width: 15px;
-  /* höjd på ikonerna vid hoover */
   height: 15px;
-
 }
-
-.bi-linkedin {
-  fill: rgb(168, 185, 237);
-  /* Ikon färgen  */
-}
-
-.toggle-checkbox {
-  display: none;
-}
-
-.toggle-label {
-  cursor: pointer;
-}
-
-.collapsible-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.toggle-checkbox:checked+.toggle-label+.collapsible-content {
-  max-height: 1000px;
-  /* Ett högt värde för att säkerställa att allt innehåll visas */
-}
-
-
-
 /*# sourceMappingURL=styles.css.map */
