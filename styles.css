@@ -169,9 +169,19 @@ margin: 10px;
 }
 
 
+.icons{
 
+display: flex;
+justify-content:start;
+margin-top: 70vh;
+padding: 5vh;
 
+}
 
+.icons img {
+  margin-right: 2vh; 
+
+}
 
 
 
