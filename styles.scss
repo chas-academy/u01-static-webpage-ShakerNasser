@@ -3,3 +3,221 @@ $myFont: Helvetica, sans-serif;
 $myColor:red;
 $myFontSize: 18px;
 $myWidth: 680px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(180deg, rgba(22, 22, 22, 0) 0%, rgb(27, 26, 26) 15%, rgb(36, 36, 36) 100%);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center right;
+    
+  }
+  
+  .container{
+    height: fit-content;
+  
+  }
+  
+  .img-container>img {
+  
+    width: calc(2048px / 5);
+    height: calc(2658px / 5);
+    position: absolute;
+    left: 55%;
+    z-index: -1;
+    bottom: 0;
+  }
+
+#skills{
+
+margin-left: 3vh;
+margin-top: 35vh;
+
+}
+
+
+.tablerow{
+
+    background-color: rgb(120, 68, 68);
+}
+.tabledata{
+
+    background-color: rgb(109, 102, 102);
+
+}
+
+p{
+    color:white;
+    font-size: 1em;
+}
+
+  table,
+  th,
+  td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+
+
+  }
+  
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 35px;
+    letter-spacing: normal;
+    cursor: pointer;
+  }
+  
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:5vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1%;
+    flex-wrap: wrap;
+    background-color: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, rgb(1, 1, 1) 35%, rgb(13, 13, 13) 100%);
+  
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .content {
+    
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  
+  h1 {
+    color: rgb(251, 250, 250);
+    margin: 20px 0px 20px;
+    font-size: 55px;
+  }
+  
+  h3 {
+    color: whitesmoke;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  
+  h3 {
+    color: whitesmoke;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  
+  h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  
+  
+  .video-logo {
+  
+    display: flex;
+    justify-content: start;
+    /*margin-left: 20vh;*/
+    // margin-top: 60vh;
+    padding: 5vh;
+    margin-top: 5vh;
+    
+  
+  }
+  
+  #icons {
+  
+    display: flex;
+    justify-content: start;
+    padding: 8vh;
+  
+  }
+  
+  #icons img {
+    margin-right: 2vh;
+  }
+  
+  /* Lägg till media query för mindre skärmar */
+  @media (max-width: 768px) {
+    body {
+      background-size: auto;
+      /* Förhindra att bakgrundsbilden skalar på mindre skärmar */
+  
+    }
+  
+    .img-container>img {
+  
+      width: calc(2048px / 10);
+      height: calc(2658px / 10);
+      position: absolute;
+      left: 50%;
+      z-index: -1;
+      top: 20%;
+  
+    }
+  
+    .logo {
+      font-size: 25px;
+
+      /* Minska textstorleken för logon */
+    }
+  
+    nav {
+      padding-top: 4vh;
+      /* Justera padding för navigationsmenyn */
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  
+    nav ul li {
+      padding: 10px 15px;
+      /* Justera padding för länkarna i menyn */
+    }
+  
+    h1 {
+      font-size: 50px;
+      /* Minska huvudrubrikens textstorlek */
+    }
+  
+    h3 {
+      font-size: 20px;
+      /* Minska underrubrikens textstorlek */
+      margin-bottom: 30px;
+      /* Justera marginalen */
+    }
+  
+    .content {
+        margin-top: 30px; /* Justera toppmarginalen för mindre skärmar */
+        margin-left: 10px; /* Justera vänstermarginalen för mindre skärmar */
+        font-size: 8%; /* Eventuellt ändra fontstorleken för mindre skärmar */
+      }
+  
+  }
+  
+  
+  
+  
+  /*# sourceMappingURL=styles.css.map */
