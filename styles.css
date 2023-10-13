@@ -19,6 +19,7 @@ body {
   height: fit-content;
 }
 
+/*Backgrundsbild*/
 .img-container > img {
   width: 409.6px;
   height: 531.6px;
@@ -26,32 +27,6 @@ body {
   left: 55%;
   z-index: -1;
   bottom: 0;
-}
-
-#skills {
-  margin-left: 3vh;
-  margin-top: 35vh;
-}
-
-.tablerow {
-  background-color: rgb(120, 68, 68);
-}
-
-.tabledata {
-  background-color: rgb(109, 102, 102);
-}
-
-p {
-  color: white;
-  font-size: 1em;
-}
-
-table,
-th,
-td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  padding: 2px;
 }
 
 .logo {
@@ -63,6 +38,7 @@ td {
   cursor: pointer;
 }
 
+/*navbar*/
 nav {
   display: flex;
   align-items: center;
@@ -105,34 +81,53 @@ h3 {
   font-size: 25px;
 }
 
-h3 {
-  color: whitesmoke;
-  margin-bottom: 50px;
-  font-size: 25px;
-}
-
 h4 {
   color: white;
   letter-spacing: 2px;
   font-size: 20px;
 }
 
+/*Tabell och text i skills*/
+#skills {
+  border: 3px solid rgb(171, 168, 168);
+  margin-top: 30vh;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+p {
+  color: white;
+  font-size: 1em;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+.tablerow {
+  background-color: rgb(120, 68, 68);
+}
+
+.tabledata {
+  background-color: rgb(109, 102, 102);
+}
+
+/*Video- med språk*/
 .video-logo {
   display: flex;
   justify-content: start;
-  /*margin-left: 20vh;*/
   padding: 5vh;
-  margin-top: 5vh;
+  margin-top: 50vh;
 }
 
 #icons {
   display: flex;
-  justify-content: start;
-  padding: 8vh;
-}
-
-#icons img {
-  margin-right: 2vh;
+  margin-top: 25vh;
+  padding-left: 10vh;
 }
 
 /* Lägg till media query för mindre skärmar */

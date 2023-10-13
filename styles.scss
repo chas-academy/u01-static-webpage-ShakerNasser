@@ -4,7 +4,7 @@ $myColor:red;
 $myFontSize: 18px;
 $myWidth: 680px;
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,6 +25,7 @@ $myWidth: 680px;
   
   }
   
+  /*Backgrundsbild*/
   .img-container>img {
   
     width: calc(2048px / 5);
@@ -33,39 +34,6 @@ $myWidth: 680px;
     left: 55%;
     z-index: -1;
     bottom: 0;
-  }
-
-#skills{
-
-margin-left: 3vh;
-margin-top: 35vh;
-
-}
-
-
-.tablerow{
-
-    background-color: rgb(120, 68, 68);
-}
-.tabledata{
-
-    background-color: rgb(109, 102, 102);
-
-}
-
-p{
-    color:white;
-    font-size: 1em;
-}
-
-  table,
-  th,
-  td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 2px;
-
-
   }
   
 
@@ -78,7 +46,8 @@ p{
     cursor: pointer;
   }
   
-  
+  /*navbar*/ 
+
   nav {
     display: flex;
     align-items: center;
@@ -107,8 +76,8 @@ p{
   
   .content {
     
-    margin-top: 50px;
-    margin-left: 25px;
+   margin-top: 50px;
+  margin-left: 25px;
   }
   
   h1 {
@@ -123,43 +92,84 @@ p{
     font-size: 25px;
   }
   
-  h3 {
-    color: whitesmoke;
-    margin-bottom: 50px;
-    font-size: 25px;
-  }
-  
+
   h4 {
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
   }
   
+
+/*Tabell och text i skills*/
+#skills{
+  border: 3px solid rgb(171, 168, 168);
+  margin-top: 30vh;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+
+p{
+    color:white;
+    font-size: 1em;
+    
+}
+
+  table,
+  th,
+  td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2px;
   
+  }
+
+    .tablerow{
+
+      background-color: rgb(120, 68, 68);
+  }
+
+  .tabledata{
+  
+      background-color: rgb(109, 102, 102);
+  
+  }
+  
+  /*Video- med språk*/ 
   .video-logo {
   
     display: flex;
     justify-content: start;
-    /*margin-left: 20vh;*/
-    // margin-top: 60vh;
     padding: 5vh;
-    margin-top: 5vh;
-    
-  
+    margin-top: 50vh;
+
   }
+
+
   
-  #icons {
-  
-    display: flex;
-    justify-content: start;
-    padding: 8vh;
-  
-  }
-  
-  #icons img {
-    margin-right: 2vh;
-  }
-  
+// #icons {
+// margin-top: auto;
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+// padding: 10px;
+// }
+
+#icons{
+display: flex;
+margin-top: 25vh;
+padding-left: 10vh;
+
+}
+
+.video-logo,
+.phone-icon,
+.linkedin-icon{
+
+}
+
+
   /* Lägg till media query för mindre skärmar */
   @media (max-width: 768px) {
     body {
@@ -214,7 +224,7 @@ p{
         margin-left: 10px; /* Justera vänstermarginalen för mindre skärmar */
         font-size: 8%; /* Eventuellt ändra fontstorleken för mindre skärmar */
       }
-  
+      
   }
   
   
