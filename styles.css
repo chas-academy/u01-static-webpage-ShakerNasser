@@ -12,6 +12,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center right;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -89,7 +90,6 @@ h4 {
 
 /*Tabell och text i skills*/
 #skills {
-  border: 3px solid rgb(171, 168, 168);
   margin-top: 30vh;
   border-radius: 5px;
   padding: 10px;
@@ -171,7 +171,10 @@ td {
   .content {
     margin-top: 30px; /* Justera toppmarginalen för mindre skärmar */
     margin-left: 10px; /* Justera vänstermarginalen för mindre skärmar */
-    font-size: 8%; /* Eventuellt ändra fontstorleken för mindre skärmar */
+    font-size: 5%; /* Eventuellt ändra fontstorleken för mindre skärmar */
+  }
+  .content h1 {
+    font-size: 25px; /* Eventuellt ändra fontstorleken för mindre skärmar */
   }
 }
 /*# sourceMappingURL=styles.css.map */

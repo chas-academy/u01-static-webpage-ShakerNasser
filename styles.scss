@@ -17,6 +17,7 @@ $myWidth: 680px;
     height: 100vh;
     background-size: cover;
     background-position: center right;
+    scroll-behavior: smooth;
     
   }
   
@@ -102,7 +103,6 @@ $myWidth: 680px;
 
 /*Tabell och text i skills*/
 #skills{
-  border: 3px solid rgb(171, 168, 168);
   margin-top: 30vh;
   border-radius: 5px;
   padding: 10px;
@@ -163,11 +163,11 @@ padding-left: 10vh;
 
 }
 
-.video-logo,
-.phone-icon,
-.linkedin-icon{
+// .video-logo,
+// .phone-icon,
+// .linkedin-icon{
 
-}
+// }
 
 
   /* Lägg till media query för mindre skärmar */
@@ -222,9 +222,13 @@ padding-left: 10vh;
     .content {
         margin-top: 30px; /* Justera toppmarginalen för mindre skärmar */
         margin-left: 10px; /* Justera vänstermarginalen för mindre skärmar */
-        font-size: 8%; /* Eventuellt ändra fontstorleken för mindre skärmar */
+        font-size: 5%; /* Eventuellt ändra fontstorleken för mindre skärmar */
       }
       
+      .content h1{
+
+        font-size: 25px; /* Eventuellt ändra fontstorleken för mindre skärmar */
+      }
   }
   
   
