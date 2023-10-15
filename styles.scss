@@ -1,291 +1,393 @@
-
 $myFont: Helvetica, sans-serif;
-$myColor:red;
+$myColor: red;
 $myFontSize: 18px;
 $myWidth: 680px;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, rgb(31, 29, 29) 15%, rgb(30, 28, 28) 100%);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center right;
-    scroll-behavior: smooth;
-    
-  }
-  
-  .container{
-    height: fit-content;
-  
-  }
-  
-  /*Backgrundsbild*/
-  .img-container>img {
-  
-    width: calc(2048px / 5);
-    height: calc(2658px / 5);
-    position: absolute;
-    left: 55%;
-    z-index: -1;
-    bottom: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
 
-  }
-  
+body {
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, rgb(31, 29, 29) 15%, rgb(30, 28, 28) 100%);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center right;
+  scroll-behavior: smooth;
 
-  .logo {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    font-size: 35px;
-    letter-spacing: normal;
-    cursor: pointer;
-  }
-  
-  /*navbar*/ 
+}
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top:5vh;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 1%;
-    flex-wrap: wrap;
-    background-color: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, rgb(1, 1, 1) 35%, rgb(13, 13, 13) 100%);
-  
-  }
-  
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 25px;
-  }
-  
-  nav ul li a {
-    color:white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-  }
-  
-  .content {
-    
-   margin-top: 100px;
-  margin-left: 25px;
-  }
-  
-  h1 {
-    color: rgb(251, 250, 250);
-    margin: 20px 0px 20px;
-    font-size: 55px;
-  }
-  
-  h3 {
-    color: whitesmoke;
-    margin-bottom: 50px;
-    font-size: 25px;
-  }
-  
+.container {
+  height: fit-content;
 
-  h4 {
-    color: white;
-    letter-spacing: 1px;
-    font-size: 20px;
-  }
-  
+}
+
+/* Backgrundsbild */
+.img-container>img {
+
+  width: calc(2048px / 4);
+  height: calc(2658px / 4);
+  position: absolute;
+  left: 65%;
+  z-index: -1;
+  bottom: 0;
+  max-width: 100%
+}
+
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 35px;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+
+span {
+
+  color: rgb(25, 14, 14);
+}
+
+/*navbar*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 1%;
+  flex-wrap: wrap;
+
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.content {
+
+  margin-top: 160px;
+  margin-left: 175px;
+}
+
+.content h1 {
+  color: rgb(251, 250, 250);
+  margin: 20px 0px 20px;
+  font-size: 65px;
+}
+
+.content h3 {
+  color: whitesmoke;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+
+.content h4 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
 
 /* Styla sektionen "About" */
 #About {
- 
-  padding: 50px; 
-  margin-top: 23%;
+  padding: 50px;
+  margin-top: 35%;
 }
 
 /* Styla "About Me" texten */
 .about-text {
-  max-width: 800px; 
-  margin: 0 auto; 
-  text-align: center; 
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Styla h4 (rubrik) */
 .about-text h4 {
-  font-size: 24px;
-  color:  white; 
+  font-size: 45px;
+  color: whitesmoke;
 }
 
 /* Styla p (stycketext) */
 .about-text p {
-  font-size: 16px; 
-  line-height: 1.3; 
-  color: whitesmoke; 
-  
+  font-size: 25px;
+  line-height: 1.3;
+  color: whitesmoke;
+
 }
 
 /* Centrera text och innehåll i sektionen */
 #skills {
   text-align: center;
-  padding: 50px; 
+  padding: 50px;
   margin-top: 5px;
 }
 
 /* Centrera h4-texten */
 #skills h4 {
   text-align: center;
+  color: white;
+  font-size: 35px;
 }
 
 /* Placera p-elementet under h4 */
 #skills p {
-  color: white;
-  display: inline-block; 
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+
 }
 
 /* Placera tabellen under p */
 .table-body {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin: 20px auto;
+
 }
 
-.table-body {
-  display: inline-block;
-  transform: translateY(60%); /* Flytta neråt med 10px */
+table {
+  width: 50%;
 }
 
-  table,
-  th,
-  td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 2px;
-  
-  }
 
-    .tablerow{
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
 
-      background-color: rgb(120, 68, 68);
-  }
+}
 
-  .tabledata{
-  
-      background-color: rgb(109, 102, 102);
-  
-  }
-  
-  /*Video- med språk*/ 
-  .video-logo {
-  
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    margin-top: 50px;
-   
+.tablerow {
 
-  }
-  
+  background-color: lightslategray;
+}
+
+.tabledata {
+
+  background-color: lightgrey;
+}
+
+/*Video- med språk*/
+.video-logo {
+
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 50px;
+
+}
+
+.video-logo1 {
+  width: 250px;
+  border-radius: 50px;
+
+}
+
 
 #icons {
-    display: flex;
-    text-align: center;
-    padding: 40px; /* Mellanrum från kanten */
-    margin-top: 22%;
+  display: flex;
+  text-align: center;
+  padding: 40px;
+  margin-top: 22%;
+  flex-direction: column;
+  align-items: center;
 }
 
-#icons h5{
+#icons h5 {
   color: rgb(249, 245, 245);
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.icons-contact {
+
+  display: flex;
+  gap: 25px;
+
 
 }
 
-.icons-contact{
-
-display: flex;
-gap: 15px;
+.phone-icon1,
+.linkedin-icon1,
+.mail-icon1 {
+  width: 55px;
 
 }
 
 
-  @media (max-width: 768px) {
-    body {
-      background-size: auto;
-      /* Förhindra att bakgrundsbilden skalar på mindre skärmar */
-  
-    }
-  
-    .img-container>img {
-  
-      width: calc(2048px / 10);
-      height: calc(2658px / 10);
-      position: absolute;
-      left: 50%;
-      z-index: -1;
-      top: 20%;
-     
-  
-    }
-  
-    .logo {
-      font-size: 25px;
-
-      /* Minska textstorleken för logon */
-    }
-  
-    nav {
-      padding-top: 4vh;
-      /* Justera padding för navigationsmenyn */
-      padding-left: 4%;
-      padding-right: 4%;
-    }
-  
-    nav ul li {
-      padding: 10px 15px;
-      /* Justera padding för länkarna i menyn */
-    }
-  
-    h1 {
-      font-size: 50px;
-      /* Minska huvudrubrikens textstorlek */
-    }
-
-  
-    .content {
-        margin-top: 100px; /* Justera toppmarginalen för mindre skärmar */
-        margin-left: 10px; /* Justera vänstermarginalen för mindre skärmar */
-        font-size: 5%; /* Eventuellt ändra fontstorleken för mindre skärmar */
-      }
-      
-      .content h1{
-
-        font-size: 25px; /* Eventuellt ändra fontstorleken för mindre skärmar */
-      }
-
-.content h3 {
-  font-size: 20px;
-  /* Minska underrubrikens textstorlek */
-  margin-bottom: 30px;
-  /* Justera marginalen */
-}
-
-
-
-     #About {
-    margin-bottom: 25%;
-    padding-right: 25px;
-    padding: 10px; /* Ändra padding för mindre skärmar */
-   
-    }
+@media (max-width: 768px) {
+  body {
+    background-size: auto; /* Förhindra att bakgrundsbilden skalar på mindre skärmar */
     
-    .about-text {
-     max-width: 100%; /* Gör texten fullt responsiv */
-     
+
+  }
+
+  .img-container>img {
+
+    width: calc(2048px / 12);
+    height: calc(2658px / 12);
+    position: absolute;
+    left: 52.5%;
+    z-index: -1;
+    top: 20%;
+
+
+  }
+
+  .logo {
+    font-size: 25px;
+
+    /* Minska textstorleken för logon */
+  }
+
+  nav {
+    padding-top: 4vh;
+    /* Justera padding för navigationsmenyn */
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  nav ul li {
+    padding: 10px 15px;
+    font-size: 15px;
+    /* Justera padding för länkarna i menyn */
+  }
+
+  h1 {
+    font-size: 50px;
+    /* Minska huvudrubrikens textstorlek */
+  }
+
+
+  .content {
+    margin-top: 100px;
+    /* Justera toppmarginalen för mindre skärmar */
+    margin-left: 10px;
+    /* Justera vänstermarginalen för mindre skärmar */
+    font-size: 5%;
+    /* Eventuellt ändra fontstorleken för mindre skärmar */
+  }
+
+  .content h1 {
+
+    font-size: 20px;
+    /* Eventuellt ändra fontstorleken för mindre skärmar */
+  }
+
+  .content h3 {
+    font-size: 15px;
+    /* Minska underrubrikens textstorlek */
+    margin-bottom: 30px;
+    /* Justera marginalen */
+  }
+
+
+  .content h4 {
+    font-size: 15px;
+
+  }
+
+  #About {
+    // padding-right: 25px;
+
+    margin-top: 120px;
+    /* Ändra padding för mindre skärmar */
+
+  }
+
+  .about-text h4 {
+
+    font-size: 25px;
+  }
+
+
+  .about-text {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Gör texten fullt responsiv */
+    p {
+      width: 325px;
+      font-size: 17px;
 
     }
+
+    .video-logo {
+      padding: 0;
+      margin-top: 42px;
+
     }
-  
-  /*# sourceMappingURL=styles.css.map */
+
+  }
+
+  .video-logo1 {
+    width: 200px;
+
+
+  }
+
+  .table-body {
+
+    margin: 30px 0px 0px 0px;
+
+    table {
+
+      width: 70px;
+      height: 70px;
+    }
+
+
+  }
+
+  #icons h5 {
+
+    max-width: 280px;
+    font-size: 15px;
+
+  }
+
+  .phone-icon1,
+  .linkedin-icon1,
+  .mail-icon1 {
+    width: 35px;
+    height: 35px;
+
+  }
+
+
+  #skills {
+
+    h4 {
+
+      font-size: 20px;
+
+    }
+
+
+  }
+
+}
+
+/*# sourceMappingURL=styles.css.map */
