@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, rgba(22, 22, 22, 0) 0%, rgb(27, 26, 26) 15%, rgb(36, 36, 36) 100%);
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, rgb(31, 29, 29) 15%, rgb(30, 28, 28) 100%);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -66,7 +66,7 @@ nav ul li a {
 }
 
 .content {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 25px;
 }
 
@@ -84,20 +84,63 @@ h3 {
 
 h4 {
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 20px;
 }
 
-/*Tabell och text i skills*/
-#skills {
-  margin-top: 30vh;
-  border-radius: 5px;
-  padding: 10px;
+/* Styla sektionen "About" */
+#About {
+  padding: 50px;
+  margin-top: 23%;
 }
 
-p {
+/* Styla "About Me" texten */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Styla h4 (rubrik) */
+.about-text h4 {
+  font-size: 24px;
   color: white;
-  font-size: 1em;
+}
+
+/* Styla p (stycketext) */
+.about-text p {
+  font-size: 16px;
+  line-height: 1.3;
+  color: whitesmoke;
+}
+
+/* Centrera text och innehåll i sektionen */
+#skills {
+  text-align: center;
+  padding: 50px;
+  margin-top: 5px;
+}
+
+/* Centrera h4-texten */
+#skills h4 {
+  text-align: center;
+}
+
+/* Placera p-elementet under h4 */
+#skills p {
+  color: white;
+  display: inline-block;
+}
+
+/* Placera tabellen under p */
+.table-body {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.table-body {
+  display: inline-block;
+  transform: translateY(60%); /* Flytta neråt med 10px */
 }
 
 table,
@@ -119,18 +162,27 @@ td {
 /*Video- med språk*/
 .video-logo {
   display: flex;
-  justify-content: start;
-  padding: 5vh;
-  margin-top: 50vh;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 50px;
 }
 
 #icons {
   display: flex;
-  margin-top: 25vh;
-  padding-left: 10vh;
+  text-align: center;
+  padding: 40px; /* Mellanrum från kanten */
+  margin-top: 22%;
 }
 
-/* Lägg till media query för mindre skärmar */
+#icons h5 {
+  color: rgb(249, 245, 245);
+}
+
+.icons-contact {
+  display: flex;
+  gap: 15px;
+}
+
 @media (max-width: 768px) {
   body {
     background-size: auto;
@@ -162,19 +214,27 @@ td {
     font-size: 50px;
     /* Minska huvudrubrikens textstorlek */
   }
-  h3 {
-    font-size: 20px;
-    /* Minska underrubrikens textstorlek */
-    margin-bottom: 30px;
-    /* Justera marginalen */
-  }
   .content {
-    margin-top: 30px; /* Justera toppmarginalen för mindre skärmar */
+    margin-top: 100px; /* Justera toppmarginalen för mindre skärmar */
     margin-left: 10px; /* Justera vänstermarginalen för mindre skärmar */
     font-size: 5%; /* Eventuellt ändra fontstorleken för mindre skärmar */
   }
   .content h1 {
     font-size: 25px; /* Eventuellt ändra fontstorleken för mindre skärmar */
+  }
+  .content h3 {
+    font-size: 20px;
+    /* Minska underrubrikens textstorlek */
+    margin-bottom: 30px;
+    /* Justera marginalen */
+  }
+  #About {
+    margin-bottom: 25%;
+    padding-right: 25px;
+    padding: 10px; /* Ändra padding för mindre skärmar */
+  }
+  .about-text {
+    max-width: 100%; /* Gör texten fullt responsiv */
   }
 }
 /*# sourceMappingURL=styles.css.map */
