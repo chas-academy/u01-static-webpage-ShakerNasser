@@ -7,7 +7,7 @@ Vår första ide skiss i form av low fidelity prototyp. Skissen är även insper
 
 High fidelity prototyp
 
-Här har vi jobbat med figma för att kunna designa en high fidelity prototyp. 
+Här har vi jobbat med figma för att kunna designa en high fidelity prototyp.
 Bilderna visar hur vår design kommer att se ut i en desktop (vanlig webbläsare av nyare modell) och hur den kommer att se ut i en telefon skärmstorlek (krav: iphone 13 pro)
 
 ![Bild på Hemskärm ](images-figma/Hem.figma.png)
